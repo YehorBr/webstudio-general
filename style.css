@@ -142,6 +142,8 @@
  } */
 
  .contacts-link{
+   display: flex;
+   align-items: center;
     color: var(--secondary-text-color);
    
  }
@@ -151,6 +153,15 @@
  .contacts-link:hover,
  .contacts-link:focus{
     color: var(--accent-color);
+ }
+
+ .contacts-icon{
+   fill: var(--secondary-text-color);
+ }
+
+ .contacts-icon:hover,
+ .contacts-icon:focus{
+   fill: var(--accent-color);
  }
  
  /* Головна секція */
