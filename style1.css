@@ -1,0 +1,256 @@
+ :root {
+     --primary-text-color: #212121;
+     --hero-background: #2F303A;
+     --logo-color: #000000;
+     --accent-color: #2196F3;
+     --secondary-text-color: #757575;
+     --background-color: #FFFFFF;
+     /* font-family: 'Raleway', sans-serif;
+   font-family: 'Roboto', sans-serif; */
+ }
+
+ html {
+     box-sizing: content-box;
+ }
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ body {
+     font-family: 'Roboto', sans-serif;
+     font-style: normal;
+     letter-spacing: 0.03em;
+
+     color: var(--primary-text-color);
+     background-color: var(--background-color);
+ }
+
+ .section {
+     /* outline:solid orange  3px; */
+     padding-bottom: 94px;
+     padding-top: 94px;
+ }
+
+ .container {
+     /* outline: solid #ff184a 4px; */
+
+     width: 1200px;
+     padding-left: 15px;
+     padding-right: 15px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .container.header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     padding-top: 24px;
+     padding-bottom: 25px;
+
+
+ }
+
+ /* логотип */
+ .logo {
+     color: var(--accent-color);
+
+     font-family: 'Raleway', sans-serif;
+     font-weight: 700;
+     font-size: 26px;
+     line-height: 31px;
+
+ }
+
+ .logo>span {
+     color: var(--logo-color);
+ }
+
+ 
+
+ a {
+     text-decoration: none;
+ }
+
+   ul,
+   p,
+   h1,
+   h2,
+   h3 {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+   }
+
+ .header nav {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .nav-list {
+     display: flex;
+     margin-left: 93px;
+ }
+
+  .nav-item:not(:first-child),
+  .contacts-item:not(:first-child) {
+      margin-left: 50px;
+  }
+
+ .nav-link,
+ .contacts-link {
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+ }
+
+ .contacts-list {
+     display: flex;
+     margin-left: auto;
+ }
+
+ .nav-link {
+     color: var(--primary-text-color);
+
+ }
+
+ .contacts-link {
+     color: var(--secondary-text-color);
+
+ }
+
+ .nav-link:hover,
+ .nav-link:focus,
+ .contacts-link:hover,
+ .contacts-link:focus {
+     color: var(--accent-color);
+ }
+
+ .buttons-list{
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 56px;
+ }
+
+ .buttons-list .list-item:not(:first-child){
+    margin-left: 8px;
+ }
+
+ .button{
+    padding: 6px 25px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+
+    border: none;
+    background: #F5F4FA;
+    border-radius: 4px;
+    
+ }
+
+ .button:hover,
+ .button:focus{
+    background-color: var(--accent-color);
+    color: var(--background-color);
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+ }
+
+.links-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+ }
+
+ .links-list .list-item{
+    width: calc((100% - 6*15px) / 3);
+    margin: 15px;
+
+ }
+
+ .text-container{
+    padding: 20px 24px;
+ } 
+
+ .project-title{
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
+        
+        color: var(--primary-text-color);
+        margin-bottom: 4px;
+
+ }
+ .specialisation{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+
+        color: var(--secondary-text-color);
+ }
+
+ footer {
+     background-color: var(--hero-background);
+ }
+
+
+ .footer-logo>span {
+     color: var(--background-color);
+ }
+
+  .footer-logo {
+      color: var(--accent-color);
+
+      font-family: 'Raleway';
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: 0.03em;
+      
+  }
+  
+
+ .address {
+     color: var(--background-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    
+    margin-top: 20px; 
+    margin-bottom: 9px;
+ }
+
+ .footer-link {
+     color: rgba(255, 255, 255, 0.6);
+
+     font-weight: 400;
+     font-size: 14px;
+     line-height: 24px;
+     letter-spacing: 0.03em;
+ }
+
+ .footer-list .list-item:not(:last-child){
+    margin-bottom: 9px;
+ }
+
+ .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+ }
+ 
