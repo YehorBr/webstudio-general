@@ -19,7 +19,7 @@
  }
  
  body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'sans-serif';
     font-style: normal;
     letter-spacing: 0.03em;
 
@@ -157,6 +157,8 @@
 
  .contacts-icon{
    fill: currentColor;
+
+   margin-right: 10px;
  }
 
  .contacts-icon:hover,
@@ -455,10 +457,111 @@
    fill: #757575;
 }
 
+.section-regular-clients{
+   padding: 94px 0;
+}
+
+.regular-clients-title {
+   color: var(--primary-text-color);
+
+   text-align: center;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: 1.08px;
+}
+
+.clients-list {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+
+   margin-top: 50px;
+}
+
+.clients-list .list-item:not(:first-child) {
+   margin-left: 30px;
+}
+
+.clients-icon{
+   fill: var(--secondary-text-color);
+
+   padding: 16px 32px;
+
+   border: 1px solid #757575;
+   border-radius: 4px;
+}
+
+.clients-list a:hover,
+.clients-list a:focus{
+   transition: 0.3s;
+}
+
+.clients-list a:hover .clients-icon,
+.clients-list a:focus .clients-icon {
+   fill: var(--accent-color);
+
+   border: 1px solid var(--accent-color);
+   border-radius: 4px;
+
+   transition: 0.3s;
+}
+
  footer{
     background-color: var(--hero-background);
  }
+ 
+.footer-container{
+   display: flex;
+}
 
+.second-container{
+      margin-left: 70px;
+}
+
+ .join-us{
+   color: #FFFFFF;
+
+   font-size: 14px;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: 0.42px;
+   text-transform: uppercase;
+
+   margin-bottom: 20px;
+ }
+ 
+ .footer-social-networks-list{
+   display: flex;
+ }
+
+ .footer-social-networks-list .list-item:not(:first-child){
+   margin-left: 10px;
+ }
+
+ .footer-social-networks-list a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: #ffffff1a;
+   
+   border-radius: 30px;
+ }
+
+ .footer-social-networks-list a:hover,
+ .footer-social-networks-list a:focus{
+   transition: 0.3s;
+   background-color: var(--accent-color);
+
+   border-radius: 30px;
+ }
+
+ .footer-social-networks-list .networks-icon{
+   fill: #fff;
+
+   padding: 12px;
+ }
 
  .footer-logo>span {
     color: var(--background-color);
