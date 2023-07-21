@@ -492,6 +492,17 @@
 .clients-list a:focus{
    transition: 0.3s;
 }
+
+.clients-list a:hover .clients-icon,
+.clients-list a:focus .clients-icon {
+   fill: var(--accent-color);
+
+   border: 1px solid var(--accent-color);
+   border-radius: 4px;
+
+   transition: 0.3s;
+}
+
  footer{
     background-color: var(--hero-background);
  }
