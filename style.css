@@ -431,6 +431,8 @@
    justify-content: center;
    align-items: center;
 
+   color: #757575;
+
    width: 44px;
    height: 44px;
 
@@ -440,21 +442,15 @@
 .social-networks-list a:hover,
 .social-networks-list a:focus{
    transition: 0.3s;
+
+   color: white;
    background-color: var(--accent-color);
 
    border-radius: 30px;
 }
 
-.social-networks-list a:hover .networks-icon,
-.social-networks-list a:focus .networks-icon{
-   fill:#fff ;
-   
-   transition: 0.3s;
-}
-
 .networks-icon{
-   
-   fill: #757575;
+   fill: currentColor;
 }
 
 .section-regular-clients{
@@ -496,17 +492,6 @@
 .clients-list a:focus{
    transition: 0.3s;
 }
-
-.clients-list a:hover .clients-icon,
-.clients-list a:focus .clients-icon {
-   fill: var(--accent-color);
-
-   border: 1px solid var(--accent-color);
-   border-radius: 4px;
-
-   transition: 0.3s;
-}
-
  footer{
     background-color: var(--hero-background);
  }
