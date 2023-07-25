@@ -76,6 +76,12 @@
      text-decoration: none;
  }
 
+ img{
+    display: block;
+    width: 100%;
+    height: auto;
+ }
+
    ul,
    p,
    h1,
@@ -132,6 +138,17 @@
      color: var(--accent-color);
  }
 
+.contacts-icon {
+      fill: currentColor;
+
+      margin-right: 10px;
+ }
+
+.contacts-icon:hover,
+.contacts-icon:focus{
+      fill: var(--accent-color);
+ }
+
  .buttons-list{
     display: flex;
     justify-content: center;
@@ -182,7 +199,13 @@
 
  .text-container{
     padding: 20px 24px;
- } 
+ }
+ 
+ .text-container{
+    border-bottom: 1px solid  #eee ;
+    border-right: 1px solid #eee;
+    border-left: 1px solid  #eee;
+ }
 
  .project-title{
     font-weight: 700;
@@ -195,32 +218,87 @@
 
  }
  .specialisation{
-    font-weight: 400;
-        font-size: 16px;
-        line-height: 30px;
-        letter-spacing: 0.03em;
+font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
 
-        color: var(--secondary-text-color);
- }
+    color: var(--secondary-text-color);
+}
 
- footer {
-     background-color: var(--hero-background);
- }
+footer {
+    background-color: var(--hero-background);
+}
 
 
- .footer-logo>span {
-     color: var(--background-color);
- }
+.footer-logo>span {
+    color: var(--background-color);
+}
 
-  .footer-logo {
-      color: var(--accent-color);
+.footer-logo {
+    color: var(--accent-color);
 
-      font-family: 'Raleway';
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 31px;
-      letter-spacing: 0.03em;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
       
+}
+
+.footer-container {
+    display: flex;
+}
+
+.second-container {
+    margin-left: 70px;
+}
+
+.join-us {
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.footer-social-networks-list {
+    display: flex;
+}
+
+
+
+  .footer-social-networks-list .list-item:not(:first-child) {
+      margin-left: 10px;
+  }
+
+  .footer-social-networks-list a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      color: #FFFFFF;
+      background-color: #ffffff1a;
+
+      border-radius: 30px;
+  }
+
+  .footer-social-networks-list a:hover,
+  .footer-social-networks-list a:focus {
+      transition: 0.3s;
+      background-color: var(--accent-color);
+
+      border-radius: 30px;
+  }
+
+  .footer-social-networks-list .networks-icon {
+      fill: currentColor;
+
+      padding: 12px;
   }
   
 

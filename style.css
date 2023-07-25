@@ -47,6 +47,12 @@
       text-decoration: none;
    }
    
+   img{
+      display: block;
+      width: 100%;
+      height: auto;
+   }
+
    ul,
    p,
    h1,
@@ -353,6 +359,40 @@
    margin-left: 30px;
 }
 
+.wwd-item{
+   position: relative;
+
+   width: 370px;
+}
+
+.what-we-do-list div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right:0;
+
+   background-color: rgba(47, 48, 58, 0.8);
+
+   height: 70px;
+}
+
+.product{
+   
+   color: var(--background-color);
+
+   text-align: center;
+   font-size: 14px;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: 0.42px;
+   text-transform: uppercase;
+
+}
+
 .section-our-team{
    background-color: #F5F4FA;
 }
@@ -531,6 +571,8 @@
    display: flex;
  }
 
+ 
+
  .footer-social-networks-list .list-item:not(:first-child){
    margin-left: 10px;
  }
@@ -540,6 +582,7 @@
    justify-content: center;
    align-items: center;
 
+   color: #FFFFFF;
    background-color: #ffffff1a;
    
    border-radius: 30px;
@@ -554,7 +597,7 @@
  }
 
  .footer-social-networks-list .networks-icon{
-   fill: #fff;
+   fill: currentColor;
 
    padding: 12px;
  }
