@@ -13,11 +13,11 @@
     box-sizing: content-box;
  }
 
- *,
+ /* *,
  *::before,
  *::after {
     box-sizing: inherit;
- }
+ } */
 
  body {
     font-family: 'Roboto', 'sans-serif';
@@ -236,6 +236,10 @@
     pointer-events: none;
  }
 
+ .form{
+   text-align: center;
+ }
+
 .forms-title{
    color: #212121;
    text-align: center;
@@ -266,7 +270,8 @@
 
 .field label{
    color: var(--secondary-text-color);
-   
+
+   text-align: left;
    font-size: 12px;
    font-weight: 400;
    line-height: normal;
@@ -336,6 +341,7 @@
    height: 15px;
 
    margin-bottom: 30px;
+   
 }
 
 
@@ -386,6 +392,13 @@
    padding: 10px 52px;
    margin-right: auto;
    margin-left: auto;
+
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.forms-button:hover,
+.forms-button:focus{
+   background-color: #188CE8;
 
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
