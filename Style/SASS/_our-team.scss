@@ -1,0 +1,79 @@
+.section-our-team {
+    background-color: #F5F4FA;
+  }
+  
+  .our-team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+  }
+  
+  .our-team-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .member {
+    width: 270px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 30px;
+    background-color: var(--background-color);
+  }
+  
+  .name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+  }
+  
+  .team-photo {
+    margin-bottom: 30px;
+  }
+  
+  .role {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 30px;
+  }
+  
+  .social-networks-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-networks-list a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #757575;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+  }
+  
+  .social-networks-list a:hover,
+  .social-networks-list a:focus {
+    transition: 0.3s;
+    color: white;
+    background-color: var(--accent-color);
+    border-radius: 30px;
+  }
+  
+  .networks-icon {
+    fill: currentColor;
+  }

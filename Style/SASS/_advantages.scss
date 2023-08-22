@@ -1,0 +1,78 @@
+.advantages-title {
+    color: var(--background-color);
+  }
+  
+  .advantages-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .advantages-item {
+    width: 270px;
+  }
+  
+  .icon-aerial::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-image: url("./images/svg/aerial.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+  
+  .icon-clock::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    background-image: url("./images/svg/clock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+  }
+  
+  .icon-diagram::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    background-image: url("./images/svg/diagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+  }
+  
+  .icon-astronaut::before {
+    content: "";
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    background-image: url("./images/svg/astronaut 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+  }
+  
+  .advantages-list-title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .advantages-text {
+    color: var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
