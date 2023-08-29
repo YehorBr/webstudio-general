@@ -3,7 +3,7 @@
   }
   
   .regular-clients-title {
-    color: var(--primary-text-color);
+    color:  $primaryTextColor;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -23,9 +23,9 @@
   }
   
   .clients-icon {
-    fill: var(--secondary-text-color);
+    fill: $secondaryTextColor;
     padding: 16px 32px;
-    border: 1px solid #757575;
+    border: 1px solid $secondaryTextColor;
     border-radius: 4px;
   }
   
@@ -36,8 +36,8 @@
   
   .clients-list a:hover .clients-icon,
   .clients-list a:focus .clients-icon {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    fill: $accentColor;
+    border: 1px solid $accentColor;
     border-radius: 4px;
     transition: 0.3s;
   }

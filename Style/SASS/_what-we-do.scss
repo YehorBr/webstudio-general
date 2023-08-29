@@ -4,7 +4,7 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color:  $primaryTextColor;
     margin-bottom: 50px;
   }
   
@@ -35,7 +35,7 @@
   }
   
   .product {
-    color: var(--background-color);
+    color:  $backgroundColor;
     text-align: center;
     font-size: 14px;
     font-weight: 700;

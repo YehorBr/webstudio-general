@@ -1,8 +1,8 @@
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--hero-background);
-    background-image: url(./images/svg/Img.svg);
+    background-color: $heroBackgroundColor;
+    background-image: url(../images/svg/Img.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
   }
   
   .hero-title {
-    color: var(--background-color);
+    color:  $backgroundColor;
     margin-left: auto;
     margin-right: auto;
     font-weight: 900;
@@ -32,9 +32,14 @@
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--background-color);
-    background-color: var(--accent-color);
+    color:$backgroundColor;
+    background-color: $accentColor;
     border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus{
+      background-color: #188CE8;
+    }
   }

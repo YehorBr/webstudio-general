@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--hero-background);
+    background-color: $heroBackgroundColor;
   }
   
   .footer-container {
@@ -11,7 +11,7 @@ footer {
   }
   
   .join-us {
-    color: #FFFFFF;
+    color: $backgroundColor;
     font-size: 14px;
     font-weight: 700;
     line-height: normal;
@@ -32,16 +32,16 @@ footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: $backgroundColor;
     background-color: rgba(255, 255, 255, 0.1019607843);
     border-radius: 30px;
-  }
-  
-  .footer-social-networks-list a:hover,
-  .footer-social-networks-list a:focus {
-    transition: 0.3s;
-    background-color: var(--accent-color);
-    border-radius: 30px;
+
+    &:hover,
+    &:focus {
+      transition: 0.3s;
+      background-color: $accentColor;
+      border-radius: 30px;
+    }
   }
   
   .footer-social-networks-list .networks-icon {
@@ -49,21 +49,21 @@ footer {
     padding: 12px;
   }
   
-  .footer-logo > span {
-    color: var(--background-color);
-  }
-  
   .footer-logo {
-    color: var(--accent-color);
+    color: $accentColor;
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+
+    & > span {
+      color:  $backgroundColor;
+    }
   }
   
   .address {
-    color: var(--background-color);
+    color:  $backgroundColor;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;

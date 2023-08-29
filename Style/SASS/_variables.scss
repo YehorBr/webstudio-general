@@ -1,8 +1,15 @@
-:root {
-    --primary-text-color: #212121;
-    --hero-background: #2F303A;
-    --logo-color: #000000;
-    --accent-color: #2196F3;
-    --secondary-text-color: #757575;
-    --background-color: #FFFFFF;
-  }
+// :root {
+//     --primary-text-color: #212121;
+//     --hero-background-color: #2F303A;
+//     --logo-color: #000000;
+//     --accent-color: #2196F3;
+//     --secondary-text-color: #757575;
+//     --background-color: #FFFFFF;
+//   }
+
+  $primaryTextColor:#212121;
+  $secondaryTextColor:#757575;
+  $heroBackgroundColor:#2F303A;
+  $accentColor: #2196F3;
+  $logoColor:#000000;
+  $backgroundColor:#FFFFFF;  

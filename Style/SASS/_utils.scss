@@ -6,8 +6,8 @@ html {
     font-family: "Roboto", "sans-serif";
     font-style: normal;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    background-color: var(--background-color);
+    color:  $primaryTextColor;
+    background-color:  $backgroundColor;
   }
 
   a {

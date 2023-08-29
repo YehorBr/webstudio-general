@@ -8,7 +8,7 @@
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color:  $primaryTextColor;
     margin-bottom: 50px;
   }
   
@@ -22,7 +22,7 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     padding-bottom: 30px;
-    background-color: var(--background-color);
+    background-color:  $backgroundColor;
   }
   
   .name {
@@ -32,7 +32,7 @@
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color:  $primaryTextColor;
     margin-bottom: 10px;
   }
   
@@ -46,7 +46,7 @@
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: $secondaryTextColor;
     margin-bottom: 30px;
   }
   
@@ -60,19 +60,22 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: #757575;
+    color: $secondaryTextColor;
     width: 44px;
     height: 44px;
-    background-color: #fff;
+    background-color:  $backgroundColor;
+
+    &:hover,
+    &:focus {
+     transition: 0.3s;
+     color:  $backgroundColor;
+     background-color:  $accentColor;
+     border-radius: 30px;
+     
+   }
   }
   
-  .social-networks-list a:hover,
-  .social-networks-list a:focus {
-    transition: 0.3s;
-    color: white;
-    background-color: var(--accent-color);
-    border-radius: 30px;
-  }
+  
   
   .networks-icon {
     fill: currentColor;
