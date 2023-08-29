@@ -44,6 +44,10 @@ h3 {
   margin-right: auto;
 }
 
+header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .container.header {
   display: -webkit-box;
   display: -ms-flexbox;
