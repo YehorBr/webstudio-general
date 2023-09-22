@@ -37,11 +37,25 @@ h3 {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 header {
@@ -61,6 +75,13 @@ header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container.header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .header nav {
   display: -webkit-box;
@@ -72,6 +93,32 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-button {
+  background-color: #fff;
+  border: none;
+}
+
+.menu-button.is-open .close-icon {
+  display: block;
+}
+
+.menu-button.is-open .open-icon {
+  display: none;
+}
+
+.menu-icon {
+  fill: black;
+}
+
+.mobile-menu {
+  position: absolute;
+  background-color: #FFFFFF;
+}
+
+.close-icon {
+  display: none;
 }
 
 .logo {
@@ -436,17 +483,44 @@ header {
   color: #FFFFFF;
 }
 
-.advantages-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
-.advantages-item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .advantages-item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-item {
+    width: 270px;
+  }
 }
 
 .icon-aerial::before {
@@ -502,9 +576,14 @@ header {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .advantages-list-title {
+    text-align: center;
+  }
 }
 
 .advantages-text {

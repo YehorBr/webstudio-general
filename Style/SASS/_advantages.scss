@@ -1,14 +1,40 @@
 .advantages-title {
-    color:   $backgroundColor;
+    color:  $backgroundColor;
   }
   
   .advantages-list {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width:$tablet){  
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    @media screen and (min-width:$desktop){
+      justify-content: space-between; 
+    }
+
   }
   
   .advantages-item {
-    width: 270px;
+    @media screen and (min-width:$mobile){
+      width: 450px;
+    }
+
+    &:not(:last-child){
+      @media screen and (min-width:$mobile){
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width:$tablet){
+      margin: 15px;
+      width: calc((100% - 30px * 2) / 2);
+    }
+
+    @media screen and ( min-width:$desktop){
+      width: 270px;
+    }
+    
   }
   
   .icon-aerial::before {
@@ -61,12 +87,19 @@
   
   .advantages-list-title {
     color:  $primaryTextColor;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.42px;
     text-transform: uppercase;
+
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px){
+      text-align: center;
+    }
+
   }
   
   .advantages-text {

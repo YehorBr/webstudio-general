@@ -8,6 +8,10 @@ header{
     align-items: center;
     padding-top: 24px;
     padding-bottom: 25px;
+
+    @media screen and (min-width: $mobile) and (max-width: 767px){
+      justify-content: space-between;
+    }
   }
   
   .header nav {
@@ -15,6 +19,34 @@ header{
     justify-content: center;
     align-items: center;
   }
+
+  .menu-button{
+    background-color: #fff;
+    border: none;
+  }
+  
+  .menu-button.is-open .close-icon{
+    display: block;
+  }
+  
+  .menu-button.is-open .open-icon{
+    display: none;
+  }
+  
+  .menu-icon{
+    fill: black;
+  }
+  
+  .mobile-menu{
+    position: absolute;
+  
+    background-color: $backgroundColor;
+  }
+  
+  .close-icon{
+    display: none;
+  }
+  
 
 
   .logo {
