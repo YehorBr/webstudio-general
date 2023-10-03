@@ -9,17 +9,43 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
   }
   
   .clients-list {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 50px;
+    
+    @media screen and (min-width: $mobile){
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+
+    @media screen and (min-width: $tablet){
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+    
   }
   
   .clients-list .list-item:not(:first-child) {
-    margin-left: 30px;
+    @media screen and (min-width:$desktop){
+      margin-left: 30px;
+    }
+    
+  } 
+
+  .clients-icon .list-item{
+    @media screen and (min-width:$mobile){
+      width: calc((100% - 30px * 3) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: $tablet){
+      width: calc((100% - 30px * 3) / 3);
+      margin: 15px;
+    }
   }
   
   .clients-icon {

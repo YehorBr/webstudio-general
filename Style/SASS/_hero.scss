@@ -2,10 +2,28 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: $heroBackgroundColor;
-    background-image: url(../images/svg/Img.svg);
+    background-image: url(../images/hero/background-img@1x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 1),
+           (min-resolution: 96dpi),
+           (min-resolution:1dppx) {
+    background-image: url(../images/hero/background-img@1x.jpg) ;    
+    }
+
+    @media (min-device-pixel-ratio: 2),
+           (min-resolution: 192dpi),
+           (min-resolution:2dppx) {
+    background-image: url(../images/hero/background-img@2x.jpg) ;    
+    }
+
+    @media (min-device-pixel-ratio: 3),
+           (min-resolution: 288dpi),
+           (min-resolution:3dppx) {
+    background-image: url(../images/hero/background-img@3x.jpg) ;    
+    }
   }
   
   .hero .container {
