@@ -22,6 +22,7 @@ img {
 }
 
 ul,
+li,
 p,
 h1,
 h2,
@@ -97,8 +98,8 @@ header {
 
 .menu-button {
   position: absolute;
-  top: 10;
-  right: 15;
+  top: 10px;
+  right: 15px;
   background-color: transparent;
   border: none;
   z-index: 5;
@@ -860,14 +861,7 @@ header {
           justify-content: center;
   text-align: center;
 }
-@media screen and (min-width: 480px) {
-  .clients-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -15px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1599px) {
   .clients-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -882,14 +876,13 @@ header {
 }
 
 @media screen and (min-width: 480px) {
-  .clients-icon .list-item {
-    width: calc((100% - 90px) / 2);
+  .clients-list .list-item {
+    width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
 @media screen and (min-width: 768px) {
-  .clients-icon .list-item {
-    width: calc((100% - 90px) / 3);
+  .clients-list .list-item {
     margin: 15px;
   }
 }
