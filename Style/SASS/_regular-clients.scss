@@ -17,7 +17,7 @@
     justify-content: center;
     text-align: center;
     
-    @media screen and (min-width: $mobile) and (max-width: 1599px){
+    @media screen and (min-width: $mobile) and (max-width: 1199px){
       flex-wrap: wrap;
       margin: -15px;
     }
@@ -33,32 +33,35 @@
 
   .clients-list .list-item{
     @media screen and (min-width:$mobile){
-      width: calc((100% - 30px * 2) / 2);
+      width: calc((100% - 15px * 4) / 2);
       margin: 15px;
     }
 
     @media screen and (min-width: $tablet){
-      width: calc((100% - 30px * 2) / 3);
+      width: calc((100% - 30px * 3) / 4);
       margin: 15px;
     }
+  }
+
+  .clients-link{
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
   }
   
   .clients-icon {
     fill: $secondaryTextColor;
-    padding: 16px 32px;
-    border: 1px solid $secondaryTextColor;
-    border-radius: 4px;
   }
   
   .clients-list a:hover,
   .clients-list a:focus {
     transition: 0.3s;
+    border: 1px solid $accentColor;
+    border-radius: 4px;
   }
   
   .clients-list a:hover .clients-icon,
   .clients-list a:focus .clients-icon {
     fill: $accentColor;
-    border: 1px solid $accentColor;
-    border-radius: 4px;
     transition: 0.3s;
   }

@@ -885,7 +885,7 @@ header {
           justify-content: center;
   text-align: center;
 }
-@media screen and (min-width: 480px) and (max-width: 1599px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .clients-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -907,29 +907,32 @@ header {
 }
 @media screen and (min-width: 768px) {
   .clients-list .list-item {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 90px) / 4);
     margin: 15px;
   }
 }
 
+.clients-link {
+  padding: 16px 32px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
 .clients-icon {
   fill: #757575;
-  padding: 16px 32px;
-  border: 1px solid #757575;
-  border-radius: 4px;
 }
 
 .clients-list a:hover,
 .clients-list a:focus {
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border: 1px solid #2196F3;
+  border-radius: 4px;
 }
 
 .clients-list a:hover .clients-icon,
 .clients-list a:focus .clients-icon {
   fill: #2196F3;
-  border: 1px solid #2196F3;
-  border-radius: 4px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
