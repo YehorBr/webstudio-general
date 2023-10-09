@@ -2,13 +2,35 @@ footer {
     background-color: $heroBackgroundColor;
   }
   
-  .footer-container {
+  .footer-container{
     display: flex;
+    @media screen and (max-width: 767px){
+      flex-direction: column;
+    }
+  }  
+
+  .first-container{
+    @media screen and (max-width: 1199px ){
+      text-align: center;
+    }
   }
   
-  .second-container {
-    margin-left: 70px;
-  }
+  .second-container{
+    @media screen and (max-width:767px){
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width:$tablet){
+      margin-left: auto;
+    }
+  
+
+    @media screen and (min-width:$desktop){
+      margin-left: 70px;
+    }
+  }  
+    
+    
   
   .join-us {
     color: $backgroundColor;
@@ -18,10 +40,15 @@ footer {
     letter-spacing: 0.42px;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (max-width:1199px) {
+      text-align: center;
+    }
   }
   
   .footer-social-networks-list {
     display: flex;
+    justify-content: center;
   }
   
   .footer-social-networks-list .list-item:not(:first-child) {
@@ -84,7 +111,6 @@ footer {
     margin-bottom: 9px;
   }
   
-  .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  .footer{
+    padding: 60px 0;
   }

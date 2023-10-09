@@ -44,13 +44,15 @@
   }
 
   .clients-link{
+    display: block;
+    color: $secondaryTextColor;
     padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
   }
   
   .clients-icon {
-    fill: $secondaryTextColor;
+    fill: currentColor;
   }
   
   .clients-list a:hover,

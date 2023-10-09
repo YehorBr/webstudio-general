@@ -68,12 +68,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -146,6 +140,19 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .mobile-menu {
     display: -webkit-box;
@@ -164,6 +171,18 @@ header {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-list {
+    margin-left: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav-list {
     display: -webkit-box;
@@ -214,9 +233,6 @@ header {
 }
 @media screen and (min-width: 768px) {
   .contacts-list {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-left: auto;
   }
 }
@@ -288,13 +304,18 @@ header {
 }
 
 .contacts-icon {
-  display: none;
   fill: currentColor;
   margin-right: 10px;
+}
+@media screen and (max-width: 767px) {
+  .contacts-icon {
+    display: none;
+  }
 }
 .contacts-icon:hover, .contacts-iconfocus {
   color: #2196F3;
 }
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -913,13 +934,15 @@ header {
 }
 
 .clients-link {
+  display: block;
+  color: #757575;
   padding: 16px 32px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 
 .clients-icon {
-  fill: #757575;
+  fill: currentColor;
 }
 
 .clients-list a:hover,
@@ -1065,9 +1088,35 @@ footer {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 767px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
-.second-container {
-  margin-left: 70px;
+@media screen and (max-width: 1199px) {
+  .first-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .second-container {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .second-container {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .second-container {
+    margin-left: 70px;
+  }
 }
 
 .join-us {
@@ -1079,11 +1128,19 @@ footer {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1199px) {
+  .join-us {
+    text-align: center;
+  }
+}
 
 .footer-social-networks-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-social-networks-list .list-item:not(:first-child) {
@@ -1151,6 +1208,5 @@ footer {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }/*# sourceMappingURL=main.css.map */
