@@ -1,11 +1,19 @@
   .buttons-list {
     display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: $tablet){
+    flex-wrap: nowrap;
     justify-content: center;
     margin-bottom: 56px;
+    }
+    
   }
   
   .buttons-list .list-item:not(:first-child) {
-    margin-left: 8px;
+    @media screen and (min-width: $tablet) {
+      margin-left: 8px;
+    }
+    
   }
   
   .button {

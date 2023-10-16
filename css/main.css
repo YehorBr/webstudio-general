@@ -120,6 +120,7 @@ header {
   .mobile-menu {
     display: none;
     position: absolute;
+    z-index: 4;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -234,6 +235,10 @@ header {
 @media screen and (min-width: 768px) {
   .contacts-list {
     margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -964,14 +969,24 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 56px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 56px;
+  }
 }
 
-.buttons-list .list-item:not(:first-child) {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .buttons-list .list-item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
 
 .button {
@@ -997,18 +1012,40 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -15px;
+}
+@media screen and (max-width: 767px) {
+  .links-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .links-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.links-list .list-item {
-  width: calc((100% - 90px) / 3);
-  margin: 15px;
+@media screen and (min-width: 768px) {
+  .links-list .list-item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .links-list .list-item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 
-.links-list img {
-  display: block;
+@media screen and (max-width: 767px) {
+  .links-list .list-item {
+    margin-bottom: 30px;
+  }
 }
 
 .thumb {
