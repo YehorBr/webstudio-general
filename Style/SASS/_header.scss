@@ -10,7 +10,7 @@ header{
 
     @media screen and (min-width: $mobile) and (max-width: 767px){
       justify-content: space-between;
-    }
+    } 
   }
 
 
@@ -74,6 +74,15 @@ header{
     &.is-open{
       display: flex;
     }
+
+    @media screen and (min-width: $tablet){
+      display: flex;
+
+    }
+
+    @media screen and (min-width: $tablet){
+      margin-left: auto;
+    }
   }
   
   .close-icon{
@@ -85,10 +94,6 @@ header{
     @media screen and (min-width: $tablet) {
       display: flex;
     }
-
-    @media screen and (min-width: $tablet)  and (max-width: 1199px){
-      margin-left: 88px;
-    }
     
     @media screen and (min-width: $desktop) {
       display: flex;
@@ -97,8 +102,7 @@ header{
   }
   
 
-.nav-item:not(:first-child),
-.contacts-item:not(:last-child){
+.nav-item:not(:first-child){
   @media screen  and (max-width: 767px){
     margin-top: 32px;
 
@@ -128,20 +132,18 @@ header{
   
   .contacts-list {
     display: flex;
-
-    @media screen  and (max-width: 767px){
-      flex-direction: column-reverse;
-      
-    }
     
-    @media screen and (min-width: $tablet) {
-      margin-left: auto;
-      flex-direction: column;
+    @media screen and (max-width: 1199px) {
+        display: block;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
       margin-left: 90px;
-    }
+   }
+
+   @media screen and (min-width: $desktop) {
+    margin-left: 310px;
+ }
     
   }
   

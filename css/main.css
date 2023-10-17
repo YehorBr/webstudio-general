@@ -141,6 +141,18 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    margin-left: auto;
+  }
+}
 
 .close-icon {
   display: none;
@@ -153,11 +165,6 @@ header {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav-list {
-    margin-left: 88px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .nav-list {
     display: -webkit-box;
@@ -168,14 +175,12 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  .nav-item:not(:first-child),
-  .contacts-item:not(:last-child) {
+  .nav-item:not(:first-child) {
     margin-top: 32px;
   }
 }
 @media screen and (min-width: 768px) {
-  .nav-item:not(:first-child),
-  .contacts-item:not(:last-child) {
+  .nav-item:not(:first-child) {
     margin-left: 50px;
   }
 }
@@ -198,26 +203,19 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .contacts-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
   .contacts-list {
-    margin-left: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin-left: 90px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts-list {
-    margin-left: 90px;
+    margin-left: 310px;
   }
 }
 
